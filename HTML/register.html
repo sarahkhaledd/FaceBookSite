@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/login-register.css?">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../JS/login-register-js.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+            <form name="registration-form" method ="post" action="register.php" enctype="multipart/form-data">
+                <h1>Create Account</h1>
+                <input type="text" name="username"  id="username" placeholder="Name" required />
+                <input type="email" name="uemail" id="uemail" placeholder="Email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+                <input type="password" name="password" id="password"  placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+                <p style="font-size: 10px; line-height: 10px; letter-spacing: 0.3px; margin: 7px 0 10px;">min 8 characters, at least 1 number and 1 letter</p>
+                <input type="date" name="date" id="date" required />
+                <input type="file"  name="my_image" id="my_image">
+                <button  type="submit" name="btn" id="btn ">Sign Up</button>
+                <a href = "login-register.html"><strong>Sign In</strong></a>
+            </form>     
+    </div>
+</body>
+
+</html>

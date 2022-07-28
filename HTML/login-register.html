@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/login-register.css?">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../JS/login-register-js.js"></script>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form method="post" action="login.php">
+                <h1>Sign in</h1>
+
+                <input type="email" name="email" id="email" placeholder="Email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+                <input type="password" name="pass" id="pass" placeholder="Password" required />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button><br>
+                <a href = "register.html"><strong>Register</strong></a>
+            </form>
+    </div>
+
+</body>
+
+</html>
